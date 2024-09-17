@@ -8,7 +8,7 @@ function App() {
 
   useEffect(() => {
     (async () => {
-      const res = await axios.get("/api");
+      const res = await axios.get("/api/v2");
       const data = res.data;
       setData(data.res);
     })();
